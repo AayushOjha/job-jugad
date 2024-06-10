@@ -7,3 +7,7 @@
  * jobs-box__html-content 
  * 
  */
+
+
+// Give me code for this simple chrome extension, where whenever page changes its state from
+// `domain.com/events?id=1` to `domain.com/events?id=2` then i have to geab p tag with id="content" and console log it content
