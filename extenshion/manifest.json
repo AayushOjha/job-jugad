@@ -1,32 +1,24 @@
 {
-    "name": "Job Gugad",
-    "description": "helping people to get their dream Job",
-    "version": "0.0.1",
-    "manifest_version": 3,
-    "author": "Ayush Ojha",
-    "browser_action": {
-        "default_popup": "popup.html",
-        "default_icon": "logo.png"
-      },
-      "icons": {
-        "128": "logo.png"
-      },
-    "permissions": [
-      "tabs",
-      "scripting",
-      "activeTab"
-    ],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "content_scripts": [
-      {
-        "matches": ["https://www.linkedin.com/jobs*"],
-        "js": ["jquery-3.7.1.min.js", "html_parser.js", "content.js"]
-      }
-    ],
-    "host_permissions": [
-        "https://www.linkedin.com/jobs*"
-       ]
+  "name": "Job Gugad",
+  "description": "helping people to get their dream Job",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "author": "Ayush Ojha",
+  "icons": {
+    "128": "logo.png"
+  },
+  "permissions": ["tabs", "scripting", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/jobs*"],
+      "js": ["jquery-3.7.1.min.js", "html_parser.js", "content.js"]
+    }
+  ],
+  "host_permissions": ["https://www.linkedin.com/jobs*"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
   }
-  
+}

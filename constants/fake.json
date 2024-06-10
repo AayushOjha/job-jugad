@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-9YWDcvjjAd4qTWgosyAwkiLf1BgIH",
+  "object": "chat.completion",
+  "created": 1718014028,
+  "model": "gpt-3.5-turbo-0125",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "1. Iceland\n2. India\n3. Indonesia\n4. Iran\n5. Iraq"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 17,
+    "completion_tokens": 19,
+    "total_tokens": 36
+  },
+  "system_fingerprint": null
+}
